@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Certifikát</title>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+    />
+
+    <style>
+        * {
+            /* box-sizing: border-box; */
+            margin: 0;
+        }
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            position: relative;
+            height: 1169px;
+            width: 19cm;
+            margin: 0;
+            /* width: 21cm;
+            height: 29.7cm; */
+        }
+
+        /* HEADER STYLES*/
+        .header {
+            position: absolute;
+            left: 0;
+            top: 0;
+            /* padding: 32px 32px 0 32px; */
+            height: 192px;
+            width: 100%;
+            background-image: url("images/certifikat/decin/bg-header.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            color: rgb(55, 77, 100);
+        }
+
+        .header__text {
+            font-family: "Open Sans", sans-serif;
+            font-size: 19.2px;
+            margin: 1.5px;
+        }
+        .margin-left {
+            margin-left: 32px;
+        }
+
+        .margin-right {
+            margin-right: 32px;
+        }
+
+        .margin-top {
+            margin-top: 32px;
+        }
+
+        .margin-bottom {
+            margin-bottom: 32px;
+        }
+        /*MAIN STYLES*/
+        .main {
+            position: absolute;
+            top: 192px;
+            left: 0;
+            width: 100%;
+            /* padding: 16px 64px 16px 64px; */
+        }
+
+        .main > * {
+            margin-left: 32px;
+            margin-right: 32px;
+        }
+
+        .main__heading {
+            font-family: "Arimo", sans-serif;
+            font-weight: 700;
+            color: rgb(12, 76, 171);
+            text-align: center;
+            font-size: 43.2px;
+            text-transform: uppercase;
+            line-height: 150%;
+            margin-bottom: 24px;
+        }
+
+        .main__subheading {
+            font-family: "Arimo", sans-serif;
+            font-weight: 400;
+            font-size: 40px;
+            color: rgb(55, 77, 100);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .main__text {
+            font-size: 19.2px;
+            font-family: "Arimo", sans-serif;
+            color: rgb(55, 77, 100);
+            margin-top: 1.5px;
+            margin-bottom: 1.5px;
+            text-align: center;
+        }
+
+        .main__text--margin {
+            margin-bottom: 32px;
+        }
+
+        .main__text--bold {
+            font-weight: 700;
+        }
+
+        .main__text--uppercase {
+            text-transform: uppercase;
+        }
+
+        .sign-line__wrapper {
+            /* width: 100%; */
+            height: 4.8px;
+            margin-top: 128px;
+            margin-bottom: 64px;
+        }
+
+        .sign-line {
+            display: inline-block;
+            height: 4.8px;
+            width: 250px;
+            background-color: rgb(55, 77, 100);
+        }
+
+        .sign-line--left {
+            float: left;
+        }
+        .sign-line--right {
+            float: right;
+        }
+
+        /*FOOTER STYLES*/
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 64px;
+            width: 100%;
+            /* padding: 0 32px 16px 32px; */
+            text-align: center;
+        }
+
+        .image-list {
+            padding: 0;
+            height: 48px;
+        }
+
+        .image-list__image {
+            height: 48px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <p class="header__text margin-top margin-left">
+        Číslo certifikátu: .......
+    </p>
+    <p class="header__text margin-left">
+        Program byl realizován v termínu od.... do....
+    </p>
+</header>
+<main class="main">
+    <h1 class="main__heading margin-top">
+        Certifikát o absolvování kurzu
+    </h1>
+    <h2 class="main__subheading">Informatika</h2>
+    <p class="main__text">Celková časová dotace programu:</p>
+    <p class="main__text">Počet absolvovaných hodin prezenční formout</p>
+    <p class="main__text main__text--margin">
+        Počet absolvovaných hodin distanční formou
+    </p>
+    <h1 class="main__heading">Kateřina Reichertová</h1>
+    <p class="main__text main__text--margin">Datum narození: 23.3.1978</p>
+    <p class="main__text main__text--margin">
+        Vzdělání bylo realizováno a řádně dokončeno v rámci projektu Flexibilní
+        práce pro ohrožené osoby. Registrační číslo projektu:
+        CZ.03.1.51/0.0/0.0/17_081/0011623
+    </p>
+    <p class="main__text main__text--bold main__text--uppercase">
+        Certifikát vydán v Děčině dne: 30.6.2020
+    </p>
+    <div class="sign-line__wrapper">
+        <div class="sign-line sign-line--left"></div>
+        <div class="sign-line sign-line--right"></div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="image-list margin-left margin-right">
+        <img class="image-list__image" src="images/certifikat/decin/eu.png" alt="EU logo" />
+        <img class="image-list__image" src="images/certifikat/decin/ohk.png" alt="EU logo" />
+        <img class="image-list__image" src="images/certifikat/decin/bpw.png" alt="EU logo" />
+    </div>
+</footer>
+</body>
+</html>
